@@ -1,3 +1,11 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# ビルド成果物
+out/
+target/
+
 # Compiled class file
 *.class
 
