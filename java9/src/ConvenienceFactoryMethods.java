@@ -19,6 +19,6 @@ public class ConvenienceFactoryMethods {
     private final static Map<Integer, String> japaneseMonthNames_ = Map.ofEntries(
             Map.entry(1, "睦月"),
             // ...
-            Map.entry(12, "師走")
+            Map.entry(12, "師走") // すべて null を許容しない
     );
 }
