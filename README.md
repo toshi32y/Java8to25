@@ -2,26 +2,14 @@
 
 Java 8からJava 25までの新機能を学習するためのサンプルコード集です。
 
+## 参考資料
+
+- [Java 8 ユーザ向けの Java 21 までの新機能ガイド](https://qiita.com/chyiro/items/9040c8b83a7b65479f7d)
+
 ## 対象バージョン
 
 - Java 8
 - Java 9
-- Java 10
-- Java 11
-- Java 12
-- Java 13
-- Java 14
-- Java 15
-- Java 16
-- Java 17
-- Java 18
-- Java 19
-- Java 20
-- Java 21
-- Java 22
-- Java 23
-- Java 24
-- Java 25
 
 ## 学習内容
 
