@@ -1,10 +1,12 @@
 # Java8to25
 
-Java 8からJava 25までの新機能を学習するためのサンプルコード集です。
+Javaのブランクが長いので…、
+Java 8からJava 25までの新機能を学習してみました。
+サンプルコードは参考資料を参考にしています。
 
 ## 参考資料
 
-- [Java 8 ユーザ向けの Java 21 までの新機能ガイド](https://qiita.com/chyiro/items/9040c8b83a7b65479f7d)
+- [Java 8 ユーザ向けの Java 21 までの新機能ガイド](https://qiita.com/chyiro/items/9040c8b83a7b65479f7d)　@chyiro　様
 
 ## 対象バージョン
 
