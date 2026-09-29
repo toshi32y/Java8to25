@@ -9,6 +9,6 @@ public class AutoBoxing {
         int value = number;    // Integerからintへ自動変換
 
         number = null;
-        int val = number; // NullPointerException
+        value = number; // NullPointerException
     }
 }
