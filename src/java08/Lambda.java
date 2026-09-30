@@ -27,5 +27,8 @@ public class Lambda {
         }
         Calculator add = (a, b) -> a + b;
 
+        // 既存メソッドをラムダ式の代わりに参照できます。
+        names.forEach(System.out::println);
+        names.forEach(name -> System.out.println(name));
     }
 }
