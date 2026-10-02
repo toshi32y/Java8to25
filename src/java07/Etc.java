@@ -6,12 +6,13 @@ import java.sql.SQLException;
 public class Etc {
     public static void main(String[] args) {
 
-        // マルチキャッチ
+        /* マルチキャッチ
         try {
             // 処理
         } catch (IOException | SQLException e) {
             e.printStackTrace();
         }
+        */
 
         // 数値リテラルの改善
         int binary = 0b1010;
