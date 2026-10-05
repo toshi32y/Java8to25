@@ -19,6 +19,8 @@ public class TimePackage {
         );
     }
     /*
+    従来のjava.util.DateやCalendarより、APIの意図が明確で、イミュータブルな設計になっています。
+
     代表的なクラス
     LocalDate       ：日付
     LocalTime       ：時刻
