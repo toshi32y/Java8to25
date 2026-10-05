@@ -9,8 +9,7 @@ public class TryWithResources {
     public static void main(String[] args) {
 
         // あまり必要性が分からない…
-        BufferedReader reader = Files.newBufferedReader(Path.of("path"));
-        try (reader){
+        try (BufferedReader reader = Files.newBufferedReader(Path.of("url"))) {
             System.out.println(reader.readLine());
         } catch (IOException e) {
             throw new RuntimeException(e);
