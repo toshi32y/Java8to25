@@ -1,18 +1,19 @@
+package java09;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class TryWithResources {
-    /*
-    // あまり必要性が分からない…
+    public static void main(String[] args) {
 
-    // Java 8
-    CloseableResource resource = ...;
-    try (CloseableResource r = resource) { // リソースとして扱うのにローカル変数への代入が必要
-    ...
+        // あまり必要性が分からない…
+        BufferedReader reader = Files.newBufferedReader(Path.of("path"));
+        try (reader){
+            System.out.println(reader.readLine());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
-
-    // Java 9 以降
-    CloseableResource resource = ...;
-    try (resource) { // 宣言済みのローカル変数をリソースとして参照できる
-    ...
-    }
-
-    */
 }
