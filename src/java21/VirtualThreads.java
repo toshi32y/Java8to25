@@ -1,11 +1,29 @@
 package java21;
 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
 public class VirtualThreads {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         Thread.startVirtualThread(() -> {
             System.out.println("Virtual thread");
         });
+
+        try (var executor =
+                     Executors.newVirtualThreadPerTaskExecutor()) {
+
+            Future<String> future = executor.submit(() -> {
+                return "result";
+            });
+
+            try {
+                System.out.println(future.get());
+            } catch (InterruptedException | ExecutionException e) {
+                throw new RuntimeException(e);
+            }
+        }
         /* Threadとの仕組みの違い
             プラットフォームスレッド
                 OS がスケジューリングする「カーネルスレッド」をラップしたもの。
